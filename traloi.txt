@@ -1,0 +1,4 @@
+4.	onPause > onStop > onDestroy > onCreate > onStart > onResume.
+5.	onPause > onStop > onRestart > onStart > onResume.
+6.	cần phải thực hiện trong phương thức vòng đời onPause.
+	vì khi chạy lại ứng dụng, phương thức onPause không bị gọi lại nên không bị cập nhật (làm mới), tức giữ lại trạng thái cũ sau khi pause. 
